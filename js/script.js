@@ -7,7 +7,7 @@ Version: 1.0
 Tags: Mobile-friendly, All-Devices-Supported. 
 */
 
-// Initialize Counter
+// Declare Counter variable
 let curruntActive = 1
 
 // API Variables
