@@ -18,6 +18,7 @@ const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
 const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query="`
 // DOM Variables
 const body = document.body;
+const logo = document.querySelector('#logo a')
 const PopularMovies = document.getElementById('PopularMovies')
 const PopularTitleEl = document.getElementById('PopularTitle')
 const fallbackImg = '/img/fallback.jpg'
@@ -205,5 +206,8 @@ window.onscroll = () => window.scrollY > 500 ? scrollUp.style.display = 'block' 
 function onLoad () {
     BackToHomeBtn.style.display = 'none'
     scrollUp.style.display = 'none'
+    logo.addEventListener('click', () => {
+        window.location.reload()
+    })
 }
 onLoad ()
