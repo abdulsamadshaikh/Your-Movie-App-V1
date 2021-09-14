@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Your Movie App</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">Your Movie</a>
+            </div>
+            <div class="search-box">
+                <form id="form" class="search-form">
+                    <input type="text" id="search" class="search" placeholder="Search your favorite movie...">
+                    <button type="submit" id="searchBtn" class="search-btn"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <main id="main">
+        <section id="PopularMovies">
+            <div class="section-title">
+                <h2 id="PopularTitle">
+                    <span>Popular Movies</span>
+                    <span id="BackToHome" class="back-to-home">Back To Home</span>
+                </h2>
+            </div>
+            <div id="moviesContainer" class="container">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+            <div id="pagination" class="pagination container">
+                <button id="prevBtn" class="btn"><i class="fas fa-long-arrow-alt-left"></i></button>
+                <button id="nextBtn" class="btn"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </div>
+        </section>
+
+        <button id="scrollUp" class="btn scroll-up"><i class="fas fa-arrow-up"></i></button>
+    </main>
+
+    <footer>
+        <div class="container">
+            <P>© 2021 - Your Movie</P>
+            <P>Developer <a href="https://getabdulsamad.com" target="_blank">Abdul</a></P>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
